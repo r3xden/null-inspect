@@ -17,9 +17,14 @@ export default class ErrorAnalyzer {
     ) {
 
         const message =
-            String(
-                input,
-            );
+
+    input instanceof Error
+
+        ? input.message
+
+        : String(
+            input,
+        );
 
         const match =
             ErrorRegistry.find(
