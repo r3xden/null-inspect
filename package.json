@@ -1,1 +1,54 @@
+{
+  "name": "null-inspect",
+  "version": "0.1.0",
+  "description": "Inspect JavaScript and TypeScript errors, logs, and stack traces with structured reports and practical fixes.",
+  "author": "Rexden",
+  "license": "MIT",
 
+  "type": "module",
+
+  "main": "./index.js",
+
+  "files": [
+    "src",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+
+  "keywords": [
+    "debug",
+    "debugging",
+    "error",
+    "errors",
+    "inspection",
+    "inspector",
+    "stacktrace",
+    "logs",
+    "typescript",
+    "javascript",
+    "nodejs",
+    "developer",
+    "diagnostics",
+    "analysis"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rexden/null-inspect.git"
+  },
+
+  "homepage": "https://github.com/Rexden/null-inspect",
+
+  "bugs": {
+    "url": "https://github.com/Rexden/null-inspect/issues"
+  },
+
+  "scripts": {
+    "test": "node tests/inspectError.test.js && node tests/inspectStack.test.js && node tests/inspectLogs.test.js"
+  },
+
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
